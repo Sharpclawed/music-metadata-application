@@ -32,18 +32,39 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="{DynamicResource CommonIndent}" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="{DynamicResource CommonIndent}" />
             <RowDefinition Height="{DynamicResource CommonIndent}" />
         </Grid.RowDefinitions>
+
+        <Button x:Name="CheckQualityButton" Content="Quality" Grid.Row="1" 
+                Grid.Column="7" Style="{DynamicResource ButtonsStyle}" />
+        <Button x:Name="CheckFolderNamesButton" Content="Folder names" Grid.Row="1"
+                Grid.Column="9" Style="{DynamicResource ButtonsStyle}" />
+        <Button x:Name="FindExtraFilesButton" Content="Extra files" Grid.Row="1"
+                Grid.Column="11" Style="{DynamicResource ButtonsStyle}" />
+        <Button x:Name="CheckFileDescriptionButton" Content="File description" Grid.Row="1"
+                Grid.Column="13" Style="{DynamicResource ButtonsStyle}" />
+
+        <Button x:Name="RunButton" Content="Run" Grid.Row="4"
+                Grid.Column="15" Style="{DynamicResource ButtonsStyle}" IsEnabled="False" />
+
+        <Button x:Name="SaveButton" Content="Save" Grid.Row="8"
+                Grid.Column="15" Style="{DynamicResource ButtonsStyle}" IsEnabled="False" />
     </Grid>
     <Window.Resources>
         <GridLength x:Key="CommonIndent">20</GridLength>
+        <SolidColorBrush x:Key="ButtonBackground" Color="AliceBlue" />
+        <Style x:Key="ButtonsStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource ButtonBackground}" />
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="30" />
+        </Style>
     </Window.Resources>
 </Window>
