@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Tools;
 
 namespace WpfUI
 {
@@ -10,6 +11,11 @@ namespace WpfUI
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RunButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            var filePaths = MusicQualityTool.GetFilesUnderQuality(@"C:\Tries\mic check", 320);
         }
     }
 }

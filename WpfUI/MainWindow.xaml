@@ -53,7 +53,8 @@
                 Grid.Column="13" Style="{DynamicResource ButtonsStyle}" />
 
         <Button x:Name="RunButton" Content="Run" Grid.Row="4"
-                Grid.Column="15" Style="{DynamicResource ButtonsStyle}" IsEnabled="False" />
+                Grid.Column="15" Style="{DynamicResource ButtonsStyle}" IsEnabled="False"
+                Click="RunButton_OnClick" />
 
         <Button x:Name="SaveButton" Content="Save" Grid.Row="8"
                 Grid.Column="15" Style="{DynamicResource ButtonsStyle}" IsEnabled="False" />
