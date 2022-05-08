@@ -4,9 +4,46 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfUI"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"
+        mc:Ignorable="d" FontFamily="Segoe UI Light"
+        Title="MainWindow" Height="563" Width="1000">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+            <ColumnDefinition Width="{DynamicResource CommonIndent}" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{DynamicResource CommonIndent}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{DynamicResource CommonIndent}" />
+            <RowDefinition Height="{DynamicResource CommonIndent}" />
+        </Grid.RowDefinitions>
     </Grid>
+    <Window.Resources>
+        <GridLength x:Key="CommonIndent">20</GridLength>
+    </Window.Resources>
 </Window>
