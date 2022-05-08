@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUI", "WpfUI\WpfUI.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{470BB77A-81FA-4D4A-B072-03ED71EA94A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsUnitTests", "ToolsUnitTests\ToolsUnitTests.csproj", "{8E94FA10-64FE-4C0D-AA64-8E7E7A24119C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{470BB77A-81FA-4D4A-B072-03ED71EA94A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{470BB77A-81FA-4D4A-B072-03ED71EA94A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{470BB77A-81FA-4D4A-B072-03ED71EA94A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E94FA10-64FE-4C0D-AA64-8E7E7A24119C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E94FA10-64FE-4C0D-AA64-8E7E7A24119C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E94FA10-64FE-4C0D-AA64-8E7E7A24119C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E94FA10-64FE-4C0D-AA64-8E7E7A24119C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
